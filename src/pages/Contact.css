@@ -420,8 +420,19 @@
     font-size: 0.875rem;
   }
 
+  .contact-form-grid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form-content {
+    display: none;
+  }
+
   .contact-form-wrapper {
     padding: 1.5rem;
+    max-width: 600px;
+    width: 100%;
   }
 
   .contact-form-content h2 {

@@ -12,10 +12,14 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      // Close mobile menu on scroll
+      if (isOpen) {
+        setIsOpen(false);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isOpen]);
 
   useEffect(() => {
     setIsOpen(false);
