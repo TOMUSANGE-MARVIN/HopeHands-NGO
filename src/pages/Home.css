@@ -334,10 +334,15 @@
 }
 
 /* Programs Section */
+.programs-section {
+  overflow: visible;
+}
+
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .program-card {
@@ -353,6 +358,7 @@
   position: relative;
   height: 180px;
   overflow: hidden;
+  border-radius: 16px 16px 0 0;
 }
 
 .program-image img {
@@ -371,7 +377,7 @@
   bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 10;
 }
 
 .program-icon {

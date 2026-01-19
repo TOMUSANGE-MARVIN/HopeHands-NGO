@@ -282,9 +282,6 @@ const Home = () => {
                 <div className={`program-card ${program.color}`}>
                   <div className="program-image">
                     <img src={program.image} alt={program.title} />
-                    <div className="program-icon-overlay">
-                      <div className="program-icon">{program.icon}</div>
-                    </div>
                   </div>
                   <div className="program-content">
                     <h3>{program.title}</h3>
