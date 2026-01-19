@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { FiHeart, FiBook, FiDroplet, FiUsers, FiArrowRight, FiCheck, FiPlay } from 'react-icons/fi';
 import ScrollReveal from '../components/ScrollReveal';
 import useCountUp from '../hooks/useCountUp';
-import heroVideo from '../assets/hero.mp4';
 import './Home.css';
 
 const StatCard = ({ number, label, delay }) => {
@@ -112,7 +111,7 @@ const Home = () => {
             poster="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&h=1080&fit=crop"
           >
             <source
-              src={heroVideo}
+              src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
               type="video/mp4"
             />
           </video>
